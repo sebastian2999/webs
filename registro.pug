@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudades inteligentes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap">
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">C<span class="logo__bold">I</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <br>
+                    <a href="/login" class="navegacion__enlace">Login</a>
+                    <a href="/registro" class="navegacion__enlace">Registro</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Monitoreo de variables ambientales</h2>
+            <p class="no-margin no-margin--p">Temperatura, radiación, humedad y sensación térmica</p>
+        </div>
+    </header>
+
+    <div class="contenedor contenido-principal">
+        <main class="blog">
+            <h3>Regístrate</h3>
+
+            <article class="entrada">
+                <form class="formulario" action="/registro/validar" method="POST">
+
+                    <div class="campo">
+                        <label class="campo__label" for="nombre">Nombre</label>
+                        <input class="campo__field" type="text" placeholder="Tu nombre" id="email" name="nombre">
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label" for="email">Email</label>
+                        <input class="campo__field" type="email" placeholder="Tu email" id="email" name="correo">
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label" for="email">Contraseña</label>
+                        <input class="campo__field" type="password" placeholder="Tu contraseña" id="email" name="password">
+                    </div>
+
+                    <div class="campo">
+                        <input type="submit" value="Confirmar registro" class="boton boton--primario">
+                    </div>
+                </form>
+            </article>
+
+            
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">C<span class="logo__bold">I</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
